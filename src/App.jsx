@@ -2,7 +2,7 @@
 function App() {
   return (
     <>
-      <h1>start</h1>
+      <h1>سلام</h1>
     </>
   )
 }

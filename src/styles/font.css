@@ -1,0 +1,86 @@
+/* <------------YakanBakh------------> */
+@font-face {
+	font-family: yekanbakh;
+	font-weight: 100;
+	src: url("../fonts/YakanBakh/YekanBakh-Hairline.ttf") format("ttf");
+}
+
+@font-face {
+	font-family: yekanbakh;
+	font-weight: 100;
+	src: url("../fonts/YakanBakh/YekanBakh-Hairline.woff") format("woff");
+}
+@font-face {
+	font-family: yekanbakh;
+	font-weight: 200;
+	src: url("../fonts/YakanBakh/YekanBakh-Thin.ttf") format("ttf");
+}
+
+@font-face {
+	font-family: yekanbakh;
+	font-weight: 200;
+	src: url("../fonts/YakanBakh/YekanBakh-Thin.woff") format("woff");
+}
+@font-face {
+	font-family: yekanbakh;
+	font-weight: 300;
+	src: url("../fonts/YakanBakh/YekanBakh-Light.ttf") format("ttf");
+}
+
+@font-face {
+	font-family: yekanbakh;
+	font-weight: 300;
+	src: url("../fonts/YakanBakh/YekanBakh-Light.woff") format("woff");
+}
+@font-face {
+	font-family: yekanbakh;
+	font-weight: 400;
+	src: url("../fonts/YakanBakh/YekanBakh-Regular.ttf") format("ttf");
+}
+
+@font-face {
+	font-family: yekanbakh;
+	font-weight: 400;
+	src: url("../fonts/YakanBakh/YekanBakh-Regular.woff") format("woff");
+}
+@font-face {
+	font-family: yekanbakh;
+	font-weight: 500;
+	src: url("../fonts/YakanBakh/YekanBakh-Medium.ttf") format("ttf");
+}
+
+@font-face {
+	font-family: yekanbakh;
+	font-weight: 500;
+	src: url("../fonts/YakanBakh/YekanBakh-Medium.woff") format("woff");
+}
+@font-face {
+	font-family: yekanbakh;
+	font-weight: 600;
+	src: url("../fonts/YakanBakh/YekanBakh-Bold.ttf") format("ttf");
+}
+
+@font-face {
+	font-family: yekanbakh;
+	font-weight: 600;
+	src: url("../fonts/YakanBakh/YekanBakh-Bold.woff") format("woff");
+}
+@font-face {
+	font-family: yekanbakh;
+	font-weight: 700;
+	src: url("../fonts/YakanBakh/YekanBakh-Heavy.ttf") format("ttf");
+}
+@font-face {
+	font-family: yekanbakh;
+	font-weight: 800;
+	src: url("../fonts/YakanBakh/YekanBakh-Fat.ttf") format("ttf");
+}
+
+@font-face {
+	font-family: yekanbakh;
+	font-weight: 800;
+	src: url("../fonts/YakanBakh/YekanBakh-Fat.woff") format("woff");
+}
+
+
+
