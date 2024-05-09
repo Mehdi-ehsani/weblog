@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Blog = ({ id, title, description, author, cover, slug }) => {
 	return (
@@ -17,6 +18,7 @@ const Blog = ({ id, title, description, author, cover, slug }) => {
 				<img className="w-full h-60 rounded-2xl" src={cover.url} />
 				<h3 className="text-xl my-2 font-bold">{title}</h3>
 				<p className=" text-slate-700 ">{description.text.slice(0, 163)} ...</p>
+				{/* <Link to={`/blogs/${slug}`} /> */}
 			</div>
 		</div>
 	);

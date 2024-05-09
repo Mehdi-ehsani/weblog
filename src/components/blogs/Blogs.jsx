@@ -2,11 +2,12 @@ import { useQuery } from "@apollo/client";
 import { GET_POSTS } from "../../graphQL/queries";
 import React from "react";
 import Blog from "./Blog";
+import Spinner from "../loading/Spinner.jsx";
 
 const Blogs = () => {
 	const { loading, error, data } = useQuery(GET_POSTS);
 
-	if (loading) return <h1>Loading...</h1>;
+	if (loading) return <Spinner/>
 	if (error) return <h1>Error</h1>;
 	console.log(data);
 	return (
