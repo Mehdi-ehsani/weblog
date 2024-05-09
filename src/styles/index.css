@@ -8,3 +8,8 @@
   font-family: yekanbakh ;
   font-weight: 500;
 }
+body {
+  max-width: 1280px;
+  margin: auto;
+  color: #222;
+}
