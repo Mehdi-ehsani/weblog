@@ -21,4 +21,15 @@ query {
   }
 }
 `;
-export {GET_POSTS}
+const GET_AUTHORS = gql`
+query {
+  authors {
+    id
+    name
+    avatar {
+      url
+    }
+  }
+}
+`;
+export {GET_POSTS , GET_AUTHORS}
