@@ -11,7 +11,7 @@ const Blogs = () => {
 	if (error) return <h1>Error</h1>;
 	console.log(data);
 	return (
-		<div className="grid lg:grid-cols-3 gap-4 my-4">
+		<div className="grid xl:grid-cols-3 xl:p-0 lg:grid-cols-2 lg:px-24 md:grid-cols-2 md:px-10 sm:grid-cols-1 sm:px-8 px-6 gap-4 my-4">
 			{data.posts.map((post) => (
 				<Blog
 					id={post.id}
