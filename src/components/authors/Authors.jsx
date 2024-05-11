@@ -18,8 +18,17 @@ const Authors = () => {
 			</h1>
 			<div className="grid grid-cols-4 gap-3 my-8">
 				{data.authors.map((auth) => (
-					<Link key={auth.id} to={`/authors/${auth.slug}`} className="flex bg-slate-100 items-center justify-start gap-4 p-3 rounded-2xl cursor-pointer border-2 border-sky-400">
-						<img className="w-16 rounded-full shadow-md shadow-slate-500/40" src={auth.avatar.url} alt="auth" />
+					<Link
+						key={auth.id}
+						to={`/authors/${auth.slug}`}
+						className="flex bg-slate-100 items-center justify-start gap-4 p-3 rounded-2xl cursor-pointer border-2 border-sky-400 shadow-lg
+            shadow-sky-300/30"
+					>
+						<img
+							className="w-16 rounded-full shadow-md shadow-slate-500/40"
+							src={auth.avatar.url}
+							alt="auth"
+						/>
 						<h4 className="text-2xl font-bold">{auth.name}</h4>
 					</Link>
 				))}

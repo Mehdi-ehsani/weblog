@@ -33,4 +33,27 @@ query {
   }
 }
 `;
-export {GET_POSTS , GET_AUTHORS}
+const GEY_AUTHOR = gql`
+query gerAuthor($slug: String!) {
+  author(where: {slug: $slug}) {
+    avatar {
+      url
+    }
+    email
+    id
+    name
+    posts {
+      cover {
+        url
+      }
+      description {
+        text
+      }
+      slug
+      title
+      id
+    }
+  }
+}
+`
+export {GET_POSTS , GET_AUTHORS , GEY_AUTHOR}
