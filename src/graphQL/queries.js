@@ -26,6 +26,7 @@ query {
   authors {
     id
     name
+    slug
     avatar {
       url
     }
