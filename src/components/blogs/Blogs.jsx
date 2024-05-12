@@ -9,7 +9,7 @@ const Blogs = () => {
 
 	if (loading) return <Spinner />;
 	if (error) return <h1>Error</h1>;
-	console.log(data);
+	
 	return (
 		<>
 			<h1 className="relative text-2xl font-bold mt-4">
