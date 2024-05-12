@@ -33,7 +33,7 @@ query {
   }
 }
 `;
-const GEY_AUTHOR = gql`
+const GET_AUTHOR = gql`
 query gerAuthor($slug: String!) {
   author(where: {slug: $slug}) {
     avatar {
@@ -56,4 +56,23 @@ query gerAuthor($slug: String!) {
   }
 }
 `
-export {GET_POSTS , GET_AUTHORS , GEY_AUTHOR}
+const GET_POST = gql`
+query getPost($slug: String!) {
+  post(where: {slug: $slug}) {
+    author {
+      avatar {
+        url
+      }
+      name
+    }
+    cover {
+      url
+    }
+    description {
+      text
+    }
+    title
+  }
+}
+`
+export {GET_POSTS , GET_POST , GET_AUTHORS , GET_AUTHOR}

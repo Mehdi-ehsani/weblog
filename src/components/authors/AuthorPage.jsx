@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { GEY_AUTHOR } from "../../graphQL/queries";
+import { GET_AUTHOR } from "../../graphQL/queries";
 import { useQuery } from "@apollo/client";
 import Spinner from "../loading/Spinner";
 import { Link } from "react-router-dom";
@@ -8,7 +8,7 @@ import { Link } from "react-router-dom";
 const AuthorPage = () => {
 	const { slug } = useParams();
 
-	const { loading, error, data } = useQuery(GEY_AUTHOR, {
+	const { loading, error, data } = useQuery(GET_AUTHOR, {
 		variables: { slug },
 	});
 	console.log(data);
@@ -26,7 +26,7 @@ const AuthorPage = () => {
 			<h1>{data.author.name}</h1>
 			<h4>ایمیل: {data.author.email}</h4>
 			<p></p>
-			<div className="grid grid-cols-3 gap-4">
+			<div className="grid grid-cols-3 gap-4 border-t-2 border-slate-200 pt-4">
 				{data.author.posts.map((post) => (
 					<div
 						className="bg-slate-100 rounded-2xl p-4 shadow-lg
