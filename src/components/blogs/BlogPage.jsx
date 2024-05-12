@@ -9,9 +9,20 @@ const BlogPage = () => {
   const {data , error , loading} = useQuery(GET_POST ,{
     variables: {slug}
   } )
-  console.log(data)
+  
+  if (loading) return <Spinner />;
+	if (error) return <h1>Error</h1>;
+
   return (
-    <div>BlogPage</div>
+    <div>
+      <img src={data.post.cover.url} alt="cover" />
+      <div>
+        <img src={data.post.author.avatar.url} alt="avatar" />
+        <h2>{data.post.author.name}</h2>
+      </div>
+      <h1>{data.post.title}</h1>
+      <p>{data.post.description.text}</p>
+    </div>
   )
 }
 
