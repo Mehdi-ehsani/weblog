@@ -42,6 +42,7 @@ query gerAuthor($slug: String!) {
     email
     id
     name
+    description
     posts {
       cover {
         url
@@ -64,6 +65,7 @@ query getPost($slug: String!) {
         url
       }
       name
+      slug
     }
     cover {
       url
