@@ -34,7 +34,7 @@ const BlogPage = () => {
           <h1 className='text-xl  mb-3 font-semibold text-sky-500'>فرم ارسال کامنت</h1>
           <input type="text" placeholder='نام کاربری' onChange={e => changeName(e.target.value)} className='w-full h-10 px-3 my-2 border-2 rounded-lg border-slate-300 outline-sky-400' />
           <input type="email" placeholder='ایمیل' onChange={e => changeEmail(e.target.value)} className='w-full h-10 px-3 my-2 border-2 rounded-lg border-slate-300 outline-sky-400' />
-          <input type="multi-line"  placeholder='متن' onChange={e => changeComment(e.target.value)} className='w-full h-20 px-3 my-2 border-2 rounded-lg border-slate-300 outline-sky-400' />
+        <textarea type="text"    placeholder='متن' onChange={e => {changeComment(e.target.value)}} className='w-full h-20 py-2 px-3 my-2 border-2 rounded-lg border-slate-300 outline-sky-400' />
           <button className='py-1 px-4 border-2 border-sky-400 rounded-lg text-l font-semibold text-sky-400 hover:text-white hover:bg-sky-400 transition-colors '> ارسال کامنت</button>
       </form>
     </div>
