@@ -1,13 +1,14 @@
 import { gql } from "@apollo/client";
 
 const CREATE_COMMENT = gql`
-mutation createComment($title: String! , $description: String! , $email: String! , $slug: String! , $date: String! ) {
+mutation MyMutation($description: String! , $email: String! , $date: String! , $name: String! , $slug: String!) {
   createComment(
-    data: {title: $title, description: $description, email: $email, date: $date, clvuz6l94130y07uzediraaeo: {connect: {slug: $slug}}}
+    data: {description: $description, email: $email, date: $date, post: {connect: {slug: $slug}}, name: $name}
   ) {
     id
   }
 }
+
 
 `
 export {CREATE_COMMENT}
